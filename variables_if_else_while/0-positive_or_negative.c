@@ -1,8 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
+/* Positive anything is better than negative nothing */
 
-/* betty style doc for function main goes there */
+/**
+ * main - This program will assign a random number to the variable n
+ * each time it is executed.
+ */
 int main(void)
 {
 	int n;
@@ -11,10 +14,11 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	if (n > 0)
-		printf ("%d is positiv\n", n);
+		printf("%d is positiv\n", n);
 	else if (n < 0)
-		printf ("%d is negative\n", n);
-	else (n = 0)
-		printf ("%d is zero\n", n);
+		printf("%d is negative\n", n);
+	else
+		printf("%d is zero\n", n);
+
 	return (0);
 }
