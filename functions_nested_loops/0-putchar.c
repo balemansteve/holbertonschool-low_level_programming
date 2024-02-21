@@ -1,10 +1,9 @@
-#include <unistd.h>
+#include <stdio.h>
 
 /**
- * main - prints _putchar.
+ * main - Print putchar.
  *
  * Return: Always 0.
- *
  */
 int main(void)
 {
