@@ -17,6 +17,13 @@ _putchar(s[index]);
 _putchar('\n');
 }
 
+/**
+ * _strlen - return the length of a string
+ * @s: string to print
+ *
+ * Return: The length of the string
+ */
+
 int _strlen(char *s)
 {
 int count, inc;
