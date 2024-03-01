@@ -10,7 +10,9 @@
  */
 int main(int argc, char *argv[])
 {
-	int sum, i, digit;
+int sum = 0;
+int i, digit;
+
 	for(i = 1; i < argc; i++)
 	{
 		for(digit = 0; argv[digit][i]; digit++)
@@ -20,9 +22,8 @@ int main(int argc, char *argv[])
 				printf("Error\n");
 				return (1);
 			}
-		
-		sum += atoi(argv[i]);
 		}
+		sum += atoi(argv[i]);
 	}	
 	printf("%d\n", sum);	
         return (0);
