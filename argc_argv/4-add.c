@@ -1,5 +1,4 @@
 #include "main.h"
-#include "ctype.h"
 /**
  * main - sum numbers of the arguments.
  *
