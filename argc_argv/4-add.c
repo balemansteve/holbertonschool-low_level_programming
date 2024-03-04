@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include "ctype.h"
 /**
  * main - sum numbers of the arguments.
  *
@@ -13,18 +13,19 @@ int main(int argc, char *argv[])
 int sum = 0;
 int i, digit;
 
-	for(i = 1; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
-		for(digit = 0; argv[digit][i]; digit++)
+		sum += atoi(argv[i]);
+
+		for (digit = 0; argv[i][digit]; digit++)
 		{
-			if (argv[digit][i] < 0 || argv[digit][i] > 9)
-			{	
+			if (!isdigit(argv[i][digit]))
+			{
 				printf("Error\n");
 				return (1);
 			}
 		}
-		sum += atoi(argv[i]);
-	}	
-	printf("%d\n", sum);	
-        return (0);
+	}
+	printf("%d\n", sum);
+	return (0);
 }
