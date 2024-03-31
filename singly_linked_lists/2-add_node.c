@@ -18,7 +18,7 @@ int _strlen(const char *s)
 }
 
 /**
- * add_note - add new nodes to the list
+ * add_node - add new nodes to the list
  *
  * @head: current place in the list
  * @str: string to add to the head
