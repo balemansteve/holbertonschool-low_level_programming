@@ -8,6 +8,8 @@
  * @len: length of the string
  * @next: points to the next node
  *
+ * Description: Node structure for a singly linked list
+ *
  */
 typedef struct list_s
 {
